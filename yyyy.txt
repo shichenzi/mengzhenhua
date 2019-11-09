@@ -1,0 +1,38 @@
+1创建秘钥
+$ ssh-keygen-t rsa-C "your_email@youremail.com"
+
+2本地找到秘钥存储在github上
+
+3检查是否链接
+$ ssh -T git@github.com
+（You've successfully authenticated, but GitHub does not provide shell access）
+已连接但需要设置
+4设置
+$ git config --global user.name "xxxxxx"
+$ git config --global user.email "xxxxx"
+
+5 进入文件夹（含git）后 cd/  ,克隆远程方便上传
+
+$ git clone https://github.com/xxxxx （github仓库的地址）
+
+6添加要上传的文件到暂存区
+
+
+
+
+
+
+
+1.克隆远程仓库到本地库。
+
+例如使用ssh方法：
+
+git clone git@github.com:(用户名)/(账户下的库).git
+
+2.对需要删除的文件、文件夹进行如下操作:
+
+git rm test.txt (删除文件)
+
+git rm -r test (删除文件夹)      
+
+3                                                                            
